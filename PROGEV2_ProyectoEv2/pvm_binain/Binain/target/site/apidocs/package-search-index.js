@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.cypherstudios.binain.app"},{"l":"com.cypherstudios.binain.controlador"},{"l":"com.cypherstudios.binain.exception"},{"l":"com.cypherstudios.binain.interfaces"},{"l":"com.cypherstudios.binain.modelo"},{"l":"com.cypherstudios.binain.util"},{"l":"com.cypherstudios.binain.vista"}];updateSearchResults();

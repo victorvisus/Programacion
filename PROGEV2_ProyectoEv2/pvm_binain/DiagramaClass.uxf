@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1160</x>
+      <y>280</y>
+      <w>210</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>/Usuario/
+--
+_-idUser: int_
+#nickName: String
+#email: String
+#pass: String
+#intereses: EstiloMusical
+#datos: DatosPersonales
+--
+#iniciarSesion(nickName String, pass String): boolean
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+-- Resp2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>450</y>
+      <w>530</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>/com.cypherstudios.gestionCuenta::CuentaCorriente/
+--
+#entidadesAuth = new HashMap(): HashMap&lt;Integer, String&gt;
+--
++CuentaCorriente(Persona titular, CodigoCuenta codigoCuenta, double saldo): ctor
++getEntidadesAuth(): HashMap&lt;Integer, String&gt;
++toString(): String
+#printEntidadesAuth(): ArrayList
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>360</y>
+      <w>330</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>EstiloMusical
+--
+#estilos = new HasMap(): HasMap&lt;Integer, String&gt;
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+-- Resp2
+bg=white</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1050</x>
+      <y>370</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1450</x>
+      <y>380</y>
+      <w>260</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>DatosPersonales
+--
+- dni: Sttring
+- nombre: String
+- apellido01: String
+- apellido02: String
+--
++DatosPersonales()
++getDni() : String
++setDni(dni String) : void
++getNombre() : String
++setNombre(nombre String) : void
++getApellido01() : String
++setApellido01(apellido01 String) : void
++getApellido02() : String
++setApellido02(apellido01 String) : void
++toString() : String
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1360</x>
+      <y>380</y>
+      <w>110</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;90.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>40</y>
+      <w>350</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interface&gt;&gt;
+IUserOperaciones
+--
+# actuaciones = new ArrayList(): ArrayList&lt;Eventos&gt;
+--
++ iniciarSesion(nickName String, pass String): boolean
++ verUsuarios(): ArrayList
++ verAgenda(): Arraylist
++ crearEvento(Evento actuacion): void
++ anularEvento(Evento actuacion): void
+--
+{verUsuarios():
+Para implementar en la clase, si el usuario es Artista
+verá a los usuarios Sala, y al contrario}
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>120</x>
+      <y>0</y>
+      <w>420</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+com.cypherstudios.interfaces::IOperaciones
+--
+~cuentasClientes = new ArrayList(): ArrayList&lt;CuentaBancaria&gt;
+--
++almacenarCuenta(CuentaBancaria cuenta): void
++ingresarEfectivo(double importe): double
++retirarEfectivo(double importe): double
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

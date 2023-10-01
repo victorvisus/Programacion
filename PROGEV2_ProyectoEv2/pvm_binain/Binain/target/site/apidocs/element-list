@@ -1,0 +1,7 @@
+com.cypherstudios.binain.app
+com.cypherstudios.binain.controlador
+com.cypherstudios.binain.exception
+com.cypherstudios.binain.interfaces
+com.cypherstudios.binain.modelo
+com.cypherstudios.binain.util
+com.cypherstudios.binain.vista
