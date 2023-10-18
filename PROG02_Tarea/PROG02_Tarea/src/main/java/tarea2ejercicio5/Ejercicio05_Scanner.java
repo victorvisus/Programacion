@@ -32,7 +32,7 @@ public class Ejercicio05_Scanner {
         } else {
             System.out.println("El primer número no es multiplo del segundo");
             System.out.printf("El resto de la división es %.2f y el resultado no es un número exacto: %.2f", resto, division);
-        };
+        }
   
     }
 }
