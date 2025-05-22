@@ -17,8 +17,10 @@ public interface IUsuarioDAO {
     /**
      * Registra un nuevo usuario en la base de datos
      *
+     * @param usr
      * @param user
      * @return
+     * @throws java.sql.SQLException
      */
     /*
      ESTE MÉTODO SE PUEDE USAR SIN INICIAR SESIÓN

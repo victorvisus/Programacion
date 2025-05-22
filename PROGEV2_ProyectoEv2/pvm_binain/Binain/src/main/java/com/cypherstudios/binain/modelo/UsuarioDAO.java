@@ -25,6 +25,7 @@ public class UsuarioDAO extends Conexion implements IUsuarioDAO {
      *
      * @param usr
      * @return
+     * @throws java.sql.SQLException
      */
     @Override
     public void registrarUser(Usuario usr) throws SQLException {
